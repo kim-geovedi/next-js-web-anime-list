@@ -1,5 +1,5 @@
 import Link from "next/link";
-import AnimeList from "./components/AnimeList";
+import AnimeList from "@/components/AnimeList";
 
 const Home = async () => {
   const response = await fetch(
@@ -9,11 +9,11 @@ const Home = async () => {
 
   return (
     <div>
-      <div className="p-4 flex justify-between">
+      <div className="p-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold">Paling Populer</h1>
         <Link
           href="/populer"
-          className="text-xl underline hover:text-indigo-500 transition-all">
+          className="md:text-xl text-sm underline hover:text-indigo-500 transition-all">
           Lihat Semua
         </Link>
       </div>
